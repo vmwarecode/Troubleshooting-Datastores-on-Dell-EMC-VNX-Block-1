@@ -1,0 +1,919 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1548081856378,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "93cbe866-2402-4ce8-b2eb-34e8ad9af1d0",
+      "importAttempts": 0,
+      "importComplete": true,
+      "isDefault": false,
+      "locked": false,
+      "name": "Custom Dashboards/Troubleshooting Datastores on Dell EMC VNX Block",
+      "namePath": "Custom Dashboards",
+      "rank": 465,
+      "shared": false,
+      "temporary": false,
+      "userId": "dc28bdb0-202a-4747-90fe-842db2ce3987",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "d7017d7e-87ce-46a5-91a3-54a2c5a4d9e0",
+            "widgetIdReceiver": "c6437981-b749-4a16-a1a1-2033de24a6f1"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "c6437981-b749-4a16-a1a1-2033de24a6f1",
+            "widgetIdReceiver": "fed6119a-01c8-43a8-af7b-b3149de2ab7a"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "fed6119a-01c8-43a8-af7b-b3149de2ab7a",
+            "widgetIdReceiver": "d7f6ab8e-b06e-4524-81b2-f7352b6148b2"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "c6437981-b749-4a16-a1a1-2033de24a6f1",
+            "widgetIdReceiver": "85e39b98-4015-4374-a745-29ffbe64493b"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "c6437981-b749-4a16-a1a1-2033de24a6f1",
+            "widgetIdReceiver": "044bc7d5-d3f0-4be8-98bd-cd0130e29dcd"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Current Owner",
+                     "metricKey": "configuration|current_owner",
+                     "metricName": "Configuration|Current Owner",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Default Owner",
+                     "metricKey": "configuration|default_owner",
+                     "metricName": "Configuration|Default Owner",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "FAST Cache Enabled",
+                     "metricKey": "configuration|fast_cache_enabled",
+                     "metricName": "Configuration|FAST Cache Enabled",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Is Thin?",
+                     "metricKey": "configuration|is_thin",
+                     "metricName": "Configuration|Is Thin",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "LUN UID",
+                     "metricKey": "configuration|lun_uid",
+                     "metricName": "Configuration|LUN UID",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Serial",
+                     "metricKey": "configuration|array_serial_number",
+                     "metricName": "Configuration|VNX Block Serial Number",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "WWN",
+                     "metricKey": "configuration|wwn",
+                     "metricName": "Configuration|WWN",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  }
+               ],
+               "mode": -1,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "selectFirstRow": {"selectFirstRow": false},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "Dell EMC VNX Block LUNs (for selected Datastore)"
+            },
+            "gridsterCoords": {
+               "h": 9,
+               "w": 4,
+               "x": 1,
+               "y": 7
+            },
+            "height": 495,
+            "id": "c6437981-b749-4a16-a1a1-2033de24a6f1",
+            "states": [
+               {
+                  "key": "perm_toolbarVisible_widget_93cbe866-2402-4ce8-b2eb-34e8ad9af1d0_c6437981-b749-4a16-a1a1-2033de24a6f1",
+                  "value": "b%3A1"
+               },
+               {
+                  "key": "permResGrid_widget_93cbe866-2402-4ce8-b2eb-34e8ad9af1d0_c6437981-b749-4a16-a1a1-2033de24a6f1",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A183%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A136%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A141%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A139%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A111%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A128%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A139%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A80%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A159%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A173%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A188%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A131%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A165%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A199%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A174%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100"
+               }
+            ],
+            "title": "Dell EMC VNX Block LUNs (for selected Datastore)",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "mode": 0,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "selectFirstRow": {"selectFirstRow": false},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:1_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:1_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "Datastores"
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 1,
+               "y": 1
+            },
+            "height": 324,
+            "id": "d7017d7e-87ce-46a5-91a3-54a2c5a4d9e0",
+            "states": [
+               {
+                  "key": "permResGrid_widget_93cbe866-2402-4ce8-b2eb-34e8ad9af1d0_d7017d7e-87ce-46a5-91a3-54a2c5a4d9e0",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_93cbe866-2402-4ce8-b2eb-34e8ad9af1d0_d7017d7e-87ce-46a5-91a3-54a2c5a4d9e0",
+                  "value": "b%3A1"
+               }
+            ],
+            "title": "Datastores",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "additionalColumns_resource": [],
+               "barsCount": 10,
+               "depth": 10,
+               "filterMode": "tagFilter",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metricOption": {
+                  "metricInfo": {
+                     "path": ["/source/GROUP_capacity/capacity|usedSpacePct"],
+                     "value": "capacity|usedSpacePct"
+                  },
+                  "resourceKindId": ["resourceKind:id:1_::_"],
+                  "tagFilter": null,
+                  "value": {"metricOption": "metricsHighestUtilization"}
+               },
+               "mode": "metric",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "regenerationTime": 15,
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagOption": {
+                  "tagFilter": null,
+                  "value": {"tagOption": "leastHealthyApplications"}
+               },
+               "title": "Top 10 Datastores by Used Space (%)"
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 3,
+               "y": 1
+            },
+            "height": 324,
+            "id": "c4721343-6ef0-41a5-b6b6-c0aed4198af2",
+            "title": "Top 10 Datastores by Used Space (%)",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "additionalColumns_resource": [],
+               "barsCount": 10,
+               "depth": 10,
+               "filterMode": "tagFilter",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metricOption": {
+                  "metricInfo": {
+                     "path": ["/source/GROUP_datastore/datastore|totalReadLatency_average"],
+                     "value": "datastore|totalReadLatency_average"
+                  },
+                  "resourceKindId": ["resourceKind:id:1_::_"],
+                  "tagFilter": null,
+                  "value": {"metricOption": "metricsHighestUtilization"}
+               },
+               "mode": "metric",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "regenerationTime": 15,
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagOption": {
+                  "tagFilter": null,
+                  "value": {"tagOption": "leastHealthyApplications"}
+               },
+               "title": "Top 10 Datastores by Read Latency (ms)"
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 5,
+               "y": 1
+            },
+            "height": 324,
+            "id": "949db36e-490d-4885-b43d-623e716ce93d",
+            "title": "Top 10 Datastores by Read Latency (ms)",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "additionalColumns_resource": [],
+               "barsCount": 10,
+               "depth": 10,
+               "filterMode": "tagFilter",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metricOption": {
+                  "metricInfo": {
+                     "path": ["/source/GROUP_datastore/datastore|numberReadAveraged_average"],
+                     "value": "datastore|numberReadAveraged_average"
+                  },
+                  "resourceKindId": ["resourceKind:id:1_::_"],
+                  "tagFilter": null,
+                  "value": {"metricOption": "metricsHighestUtilization"}
+               },
+               "mode": "metric",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "regenerationTime": 15,
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagOption": {
+                  "tagFilter": null,
+                  "value": {"tagOption": "leastHealthyApplications"}
+               },
+               "title": "Top 10 Datastores by Read IOPS"
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 9,
+               "y": 1
+            },
+            "height": 324,
+            "id": "bcca0d78-8684-4b81-b51f-d51644e7f70c",
+            "title": "Top 10 Datastores by Read IOPS",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Agent Revision",
+                     "metricKey": "configuration|agent_revision",
+                     "metricName": "Configuration|Agent Revision",
+                     "resourceKindId": "resourceKind:id:2_::_"
+                  },
+                  {
+                     "boxLabel": "Cabinet",
+                     "metricKey": "configuration|cabinet",
+                     "metricName": "Configuration|Cabinet",
+                     "resourceKindId": "resourceKind:id:2_::_"
+                  },
+                  {
+                     "boxLabel": "Model",
+                     "metricKey": "configuration|model",
+                     "metricName": "Configuration|Model",
+                     "resourceKindId": "resourceKind:id:2_::_"
+                  },
+                  {
+                     "boxLabel": "Model Type",
+                     "metricKey": "configuration|model_type",
+                     "metricName": "Configuration|Model Type",
+                     "resourceKindId": "resourceKind:id:2_::_"
+                  },
+                  {
+                     "boxLabel": "Revision",
+                     "metricKey": "configuration|revision",
+                     "metricName": "Configuration|Revision",
+                     "resourceKindId": "resourceKind:id:2_::_"
+                  },
+                  {
+                     "boxLabel": "Serial",
+                     "metricKey": "configuration|array_serial_number",
+                     "metricName": "Configuration|VNX Block Serial Number",
+                     "resourceKindId": "resourceKind:id:2_::_"
+                  }
+               ],
+               "mode": 1,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "selectFirstRow": {"selectFirstRow": false},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:2_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:2_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "Dell EMC VNX Block Arrays (for selected LUN)"
+            },
+            "gridsterCoords": {
+               "h": 5,
+               "w": 4,
+               "x": 1,
+               "y": 16
+            },
+            "height": 267,
+            "id": "fed6119a-01c8-43a8-af7b-b3149de2ab7a",
+            "states": [
+               {
+                  "key": "permResGrid_widget_93cbe866-2402-4ce8-b2eb-34e8ad9af1d0_fed6119a-01c8-43a8-af7b-b3149de2ab7a",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A188%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A163%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A145%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A155%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A151%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A101%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A80%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A107%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A133%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A136%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_93cbe866-2402-4ce8-b2eb-34e8ad9af1d0_fed6119a-01c8-43a8-af7b-b3149de2ab7a",
+                  "value": "b%3A1"
+               }
+            ],
+            "title": "Dell EMC VNX Block Arrays (for selected LUN)",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 3,
+               "boxHeight": null,
+               "labelSize": 12,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel10472-1",
+                        "isStringMetric": false,
+                        "metricKey": "performance|average_lun_utilization",
+                        "metricName": "Performance|Average LUN Utilization",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "Block Array",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel10472-2",
+                        "isStringMetric": false,
+                        "metricKey": "performance|read_miss_ratio",
+                        "metricName": "Performance|Read Miss Ratio",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "Block Array",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel10472-3",
+                        "isStringMetric": false,
+                        "metricKey": "performance|total_lun_iops",
+                        "metricName": "Performance|Total LUN IOPS",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "Block Array",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel10472-4",
+                        "isStringMetric": false,
+                        "metricKey": "performance|total_lun_throughput",
+                        "metricName": "Performance|Total LUN Throughput",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "Block Array",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel10472-5",
+                        "isStringMetric": false,
+                        "metricKey": "performance|write_miss_ratio",
+                        "metricName": "Performance|Write Miss Ratio",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:2_::_",
+                        "resourceKindName": "Block Array",
+                        "unit": "Auto"
+                     }
+                  ],
+                  "resourceMetrics": []
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "periodLength": "last7Days",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": 0,
+               "resInteractionMode": null,
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": false},
+               "showDT": {"showDT": false},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "Dell EMC VNX Array Performance Dashboard (for selected Array)",
+               "valueSize": 24,
+               "visualTheme": 5
+            },
+            "gridsterCoords": {
+               "h": 5,
+               "w": 8,
+               "x": 5,
+               "y": 16
+            },
+            "height": 267,
+            "id": "d7f6ab8e-b06e-4524-81b2-f7352b6148b2",
+            "title": "Dell EMC VNX Array Performance Dashboard (for selected Array)",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "additionalColumns_resource": [],
+               "barsCount": 10,
+               "depth": 10,
+               "filterMode": "tagFilter",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metricOption": {
+                  "metricInfo": {
+                     "path": ["/source/GROUP_datastore/datastore|totalWriteLatency_average"],
+                     "value": "datastore|totalWriteLatency_average"
+                  },
+                  "resourceKindId": ["resourceKind:id:1_::_"],
+                  "tagFilter": {
+                     "path": ["/source/kind/kind:resourceKind:id:1_::_"],
+                     "value": {
+                        "adapterInstance": [],
+                        "adapterKind": [],
+                        "bus": [],
+                        "collector": [],
+                        "day": [],
+                        "exclaim": false,
+                        "healthRange": [],
+                        "kind": ["resourceKind:id:1_::_"],
+                        "maintenanceSchedule": [],
+                        "state": [],
+                        "status": [],
+                        "tag": [],
+                        "tier": []
+                     }
+                  },
+                  "value": {"metricOption": "metricsHighestUtilization"}
+               },
+               "mode": "metric",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "regenerationTime": 15,
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagOption": {
+                  "tagFilter": null,
+                  "value": {"tagOption": "leastHealthyApplications"}
+               },
+               "title": "Top 10 Datastores by Write Latency (ms)"
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 7,
+               "y": 1
+            },
+            "height": 324,
+            "id": "271ea186-6d6e-421e-ac8c-9899b3349882",
+            "title": "Top 10 Datastores by Write Latency (ms)",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [],
+               "additionalColumns_resource": [],
+               "barsCount": 10,
+               "depth": 10,
+               "filterMode": "tagFilter",
+               "filterOldMetrics": {"filterOldMetrics": false},
+               "metricOption": {
+                  "metricInfo": {
+                     "path": ["/source/GROUP_datastore/datastore|numberWriteAveraged_average"],
+                     "value": "datastore|numberWriteAveraged_average"
+                  },
+                  "resourceKindId": ["resourceKind:id:1_::_"],
+                  "tagFilter": null,
+                  "value": {"metricOption": "metricsHighestUtilization"}
+               },
+               "mode": "metric",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "regenerationTime": 15,
+               "roundDecimals": 1,
+               "selfProvider": {"selfProvider": true},
+               "tagOption": {
+                  "tagFilter": null,
+                  "value": {"tagOption": "leastHealthyApplications"}
+               },
+               "title": "Top 10 Datatores by Write IOPS"
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 2,
+               "x": 11,
+               "y": 1
+            },
+            "height": 324,
+            "id": "638eab0c-0ad6-43b2-9d02-922a36afd027",
+            "title": "Top 10 Datatores by Write IOPS",
+            "type": "ParetoAnalysis"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 4,
+               "boxHeight": null,
+               "labelSize": 12,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel8750-1",
+                        "isStringMetric": false,
+                        "metricKey": "capacity|total_capacity",
+                        "metricName": "Capacity|Total Capacity",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel8750-2",
+                        "isStringMetric": false,
+                        "metricKey": "capacity|used_capacity",
+                        "metricName": "Capacity|Used Capacity",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel8750-3",
+                        "isStringMetric": false,
+                        "metricKey": "capacity|user_capacity",
+                        "metricName": "Capacity|User Capacity",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel8750-4",
+                        "isStringMetric": false,
+                        "metricKey": "capacity|utilization",
+                        "metricName": "Capacity|Utilization",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     }
+                  ],
+                  "resourceMetrics": []
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "periodLength": "last7Days",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": 0,
+               "resInteractionMode": null,
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": false},
+               "showDT": {"showDT": false},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "Dell EMC VNX Block LUN Capacity Scoreboard (for selected LUN)",
+               "valueSize": 24,
+               "visualTheme": 6
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 8,
+               "x": 5,
+               "y": 7
+            },
+            "height": 153,
+            "id": "85e39b98-4015-4374-a745-29ffbe64493b",
+            "title": "Dell EMC VNX Block LUN Capacity Scoreboard (for selected LUN)",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 4,
+               "boxHeight": null,
+               "labelSize": 12,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-1",
+                        "isStringMetric": false,
+                        "metricKey": "performance|blocks_read",
+                        "metricName": "Performance|Blocks Read",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-2",
+                        "isStringMetric": false,
+                        "metricKey": "performance|blocks_written",
+                        "metricName": "Performance|Blocks Written",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-3",
+                        "isStringMetric": false,
+                        "metricKey": "performance|busy_ticks",
+                        "metricName": "Performance|Busy Ticks",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-4",
+                        "isStringMetric": false,
+                        "metricKey": "performance|explicit_trespasses",
+                        "metricName": "Performance|Explicit Trespasses",
+                        "metricUnitId": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-5",
+                        "isStringMetric": false,
+                        "metricKey": "performance|idle_ticks",
+                        "metricName": "Performance|Idle Ticks",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-6",
+                        "isStringMetric": false,
+                        "metricKey": "performance|implicit_trespasses",
+                        "metricName": "Performance|Implicit Trespasses",
+                        "metricUnitId": null,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": null
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-7",
+                        "isStringMetric": false,
+                        "metricKey": "performance|iops",
+                        "metricName": "Performance|IOPS",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-8",
+                        "isStringMetric": false,
+                        "metricKey": "performance|read_iops",
+                        "metricName": "Performance|Read IOPS",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-9",
+                        "isStringMetric": false,
+                        "metricKey": "performance|read_requests_counter",
+                        "metricName": "Performance|Read Requests",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-10",
+                        "isStringMetric": false,
+                        "metricKey": "performance|read_throughput",
+                        "metricName": "Performance|Read Throughput",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-11",
+                        "isStringMetric": false,
+                        "metricKey": "performance|sp_a_busy",
+                        "metricName": "Performance|SP A Busy",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-12",
+                        "isStringMetric": false,
+                        "metricKey": "performance|sp_b_busy",
+                        "metricName": "Performance|SP B Busy",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-13",
+                        "isStringMetric": false,
+                        "metricKey": "performance|throughput",
+                        "metricName": "Performance|Throughput",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-14",
+                        "isStringMetric": false,
+                        "metricKey": "performance|write_iops",
+                        "metricName": "Performance|Write IOPS",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-15",
+                        "isStringMetric": false,
+                        "metricKey": "performance|write_requests",
+                        "metricName": "Performance|Write Requests",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     },
+                     {
+                        "colorMethod": 1,
+                        "id": "extModel9441-16",
+                        "isStringMetric": false,
+                        "metricKey": "performance|write_throughput",
+                        "metricName": "Performance|Write Throughput",
+                        "metricUnitId": -1,
+                        "resourceKindId": "resourceKind:id:0_::_",
+                        "resourceKindName": "LUN",
+                        "unit": "Auto"
+                     }
+                  ],
+                  "resourceMetrics": []
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "periodLength": "last7Days",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": 0,
+               "resInteractionMode": null,
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": false},
+               "showDT": {"showDT": false},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": false},
+               "showSparkline": {"showSparkline": true},
+               "title": "Dell EMC VNX Block LUN Performance Scoreboard (for selected LUN)",
+               "valueSize": 24,
+               "visualTheme": 6
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 8,
+               "x": 5,
+               "y": 10
+            },
+            "height": 324,
+            "id": "044bc7d5-d3f0-4be8-98bd-cd0130e29dcd",
+            "title": "Dell EMC VNX Block LUN Performance Scoreboard (for selected LUN)",
+            "type": "Scoreboard"
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [
+      {
+         "adapterKindKey": "VMWARE",
+         "internalId": "resourceKind:id:1_::_",
+         "resourceKindKey": "Datastore"
+      },
+      {
+         "adapterKindKey": "EMCVNXBLOCK_ADAPTER",
+         "internalId": "resourceKind:id:2_::_",
+         "resourceKindKey": "vnx_block"
+      },
+      {
+         "adapterKindKey": "EMCVNXBLOCK_ADAPTER",
+         "internalId": "resourceKind:id:0_::_",
+         "resourceKindKey": "logical_unit"
+      }
+   ]},
+   "uuid": "83e9129a-4316-4cc1-9c28-b438c9e637c9"
+}
